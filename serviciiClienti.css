@@ -1,0 +1,179 @@
+body {
+    background-image: url(images/pozaPrincipala.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+#search {
+    border: 4px double #00008b;
+    border-radius: 30px;
+    margin-top: 8px;
+    width: 250px;
+}
+
+.menu {
+    background-color: cadetblue;
+    overflow: hidden;
+    border: 3px solid cadetblue;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.menu a {
+    float: left;
+    text-align: center;
+    color: aliceblue;
+    padding: 13px 15px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu-right-side {
+    float: right;
+}
+
+.menu a.active {
+    background-color: #000000;
+}
+
+.menu a:hover {
+    background-color: #ffffff;
+    color: #000;
+    font-weight: bold;
+}
+
+.utilizator {
+    color: blue !important
+}
+
+.home {
+    background-color: #a52a2a;
+}
+
+p {
+    text-align: center;
+}
+
+h2 {
+    color: #0000ff;
+    text-align: center;
+}
+
+h3 {
+    color: #ff0000;
+    text-align: center;
+}
+
+h4 {
+    color: #ffa500;
+    text-align: center;
+}
+
+h5 {
+    color: green;
+    text-align: center;
+}
+
+strong {
+    color: red;
+}
+
+.sigla {
+    float: left;
+    margin: 10px 50px;
+    text-align: center;
+    font-size: 20px;
+    color: #0000ff;
+    cursor: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    animation: pulsate 3s infinite alternate;
+}
+
+@keyframes pulsate {
+    100% {
+        color: #f0ffff;
+    }
+
+    50% {
+        color: #0000ff;
+    }
+
+    0% {
+        color: green;
+    }
+}
+
+.sigla:hover {
+    color: white;
+}
+
+.abonare {
+    color: black;
+}
+
+.footer {
+    padding: 60px;
+    text-align: center;
+    margin-top: 100px;
+    background-color: cadetblue;
+    float: left;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer li {
+    margin: 0 20px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+li {
+    font-size: 20px;
+    margin: 10px;
+}
+
+@media screen and (min-width: 400px) and (max-width: 700px) {
+
+    .footer {
+        width: 100%;
+        height: 50px;
+        font-size: 10px;
+    }
+
+    .footer li {
+        font-size: 10px;
+    }
+
+    .menu {
+        font-size: 5px;
+    }
+
+    #search {
+        width: 100px;
+    }
+
+    .sigla {
+        font-size: 10px;
+    }
+
+    .menu a {
+        font-size: 10px;
+        height: 1px;
+        padding: 8px;
+    }
+}
